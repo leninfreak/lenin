@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>AAC-CS | ADMIN | UPLOAD FILES</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+ <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+<style>
+.bg-dark {
+    background-color: black !important;
+}
+#box_shadow {
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px 18px #888888;
+}
+
+</style>
+<center>
+<a class="navbar-brand" href="sample.html">
+  <img src="images/aac_cs_logo.jpg" alt="logo" width="100%" height="100%"></a>
+</center>
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+ 
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav navbar-right">
+      <li class="nav-item active">
+        <a class="nav-link" href="sample.html">Magazine</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="announcements.html">Announcement</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="samplefile.html">UPLOAD FILES</a>
+      </li>   
+      <li class="nav-item">
+      <a href="logout_admin.php"> <button type="button" class="btn btn-danger">LOGOUT</button></a>
+      </li>  
+    </ul>
+  </div>  
+</nav>
+<br>
+
+<div class="container">
+  <div id="box_shadow">
+
+    <form action="files.php" method="POST" enctype="multipart/form-data">
+        
+		<div class="form-group name"><label for="name">Enter Heading</label><br>
+      <input input type="text" name="content" class="form-control"  placeholder="Add Contents" /required>
+          </div>
+          
+   
+	 <div class="form-group name"><label for="name">Add Files</label><br>
+<input type="file" name="file" class="form-control" placeholder="Add Files" /required>
+    </div>
+          <center><button type="submit" name="submit" class="btn btn-success">UPDATE</button></center>
+</form>
+      </div>
+</div>
+     <div style="padding:5px">
+          <embed type="application/pdf" src="nsc.pdf" style="width:100%; height:720px"></embed>
+     </div>
+</body>
+</html>
